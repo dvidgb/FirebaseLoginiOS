@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FirebaseTutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="closeSessionButton" destination="fA5-wN-T4V" id="lfn-c9-tIZ"/>
+                <outlet property="emailLabel" destination="Ya8-0w-0Uj" id="Dga-a7-tNB"/>
+                <outlet property="providerLabel" destination="Y4B-kv-8cR" id="Jqv-8A-MSV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="AtG-VD-b7n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Xb-Gl-24k">
+                    <rect key="frame" x="16" y="60" width="382" height="136"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya8-0w-0Uj">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-kv-8cR">
+                            <rect key="frame" x="0.0" y="48" width="382" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA5-wN-T4V">
+                            <rect key="frame" x="0.0" y="96" width="382" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="nue-CO-u5L"/>
+                            </constraints>
+                            <state key="normal" title="Cerrar Sesión">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closeSessionButtonAction:" destination="-1" eventType="touchUpInside" id="xxb-Ym-VqD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Xb-Gl-24k" secondAttribute="trailing" constant="16" id="8Wm-7v-BhP"/>
+                <constraint firstItem="4Xb-Gl-24k" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="NyQ-tu-qMA"/>
+                <constraint firstItem="4Xb-Gl-24k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="mmh-Du-HkZ"/>
+            </constraints>
+            <point key="canvasLocation" x="65" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
